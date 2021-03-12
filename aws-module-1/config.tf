@@ -4,7 +4,7 @@ variable "secret_key" {}
 
 
 variable "tag" {
-  default = "tathagat-test"
+  default = "tathagat-test-1"
 }
 
 provider "aws" {
