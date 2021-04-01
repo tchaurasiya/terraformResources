@@ -1,20 +1,20 @@
 
-variable "tfv" {}
-variable "sl" {}
+variable "tfversion" {}
+variable "sleep" {}
 
 
 resource "null_resource" "delaymodule2" {
   provisioner "local-exec" {
-    command = var.tfv
+    command = var.tfversion
     interpreter = ["/bin/sleep"]
   }
 }
 
 output "version" {
-  value = var.tfv
+  value = var.tfversion
 }
 
 output "sleepoutput" {
-  value = var.sl
+  value = var.tfversion
 }
 
