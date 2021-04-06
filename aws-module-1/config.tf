@@ -40,8 +40,7 @@ resource "aws_s3_bucket" "terraform_state_tathagat_test" {
 
 terraform {
   backend "s3" {
-    access_key = var.access_key
-    secret_key = var.secret_key
+    # put access_key and secret key from backendconfig file
     # Replace this with your bucket name!
     bucket         = "terraform-state-tathagat-test"
     region         = "us-east-1"
