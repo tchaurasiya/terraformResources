@@ -21,6 +21,20 @@ resource "aws_instance" "ec2_instance_test" {
   }
 }
 
+
+terraform {
+  backend "s3" {
+    # put access_key and secret key from backendconfig file
+    # Replace this with your bucket name!
+    bucket         = "terraform-state-tathagat-test"
+    region         = "us-east-1"
+    key = "tf/terraform.tfstate"
+    # Replace this with your DynamoDB table name!
+    encrypt        = true
+  }
+}
+
+
 output "tag" {
   value = var.tag
 }

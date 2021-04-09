@@ -4,7 +4,7 @@ variable "secret_key" {}
 
 
 variable "tag" {
-  default = "tathagat-test-1"
+  default = "terragrunt-bugbash"
 }
 
 provider "aws" {
