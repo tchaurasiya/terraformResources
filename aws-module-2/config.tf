@@ -28,7 +28,7 @@ terraform {
     # Replace this with your bucket name!
     bucket         = "terraform-state-tathagat-test"
     region         = "us-east-1"
-    key = "tf/terraform.tfstate"
+    key = "terraform.tfstate"
     # Replace this with your DynamoDB table name!
     encrypt        = true
   }
