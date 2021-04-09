@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "aws_instance" "ec2_instance_test" {
   ami           = "ami-0663143d1f1caa3bf"
-  instance_type = "t2.micro"
+  instance_type = "t2.nano"
   tags = {
     Name = var.tag
   }
