@@ -8,7 +8,7 @@ variable "tag" {
 }
 
 variable "cluster"{
-  deafult = "us-east-1"
+  default = "us-east-1"
 }
 
 provider "aws" {
