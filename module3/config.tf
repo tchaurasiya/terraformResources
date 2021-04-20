@@ -17,3 +17,7 @@ output "versionModule3" {
 output "sleepoutputModule3" {
   value = var.slmodule3
 }
+
+output "clusterName" {
+  value = "us-central1-a/harness-test"
+}
