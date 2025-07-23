@@ -1,11 +1,11 @@
 name: allhandsdemo
 replicas: 1
 
-image: <+artifact.image>
+image: ${{artifact.image}}
 pullPolicy: Always
 dockercfg: <+imagePullSecret.primary>
 createNamespace: false
-namespace: <+infra.namespace>
+namespace: ${{infra.namespace}}
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
 # ClusterIP | NodePort | LoadBalancer | ExternalName
